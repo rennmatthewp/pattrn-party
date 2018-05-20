@@ -1,0 +1,97 @@
+#header-bar {
+  position: relative;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.header-bar-nav {
+  background-color: #d1d2d3;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header-bar-circle-logo {
+  border: 1px solid #c1c2c3;
+  border-radius: 100px;
+  background-color: #f2f2f2;
+  height: 75px;
+  width: 75px;
+}
+
+.header-bar-menu-text {
+  display: none;
+}
+
+.header-bar-menu {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: 16px;
+  top: 27px;
+  width: 86%;
+}
+
+.header-bar-ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+}
+
+.header-bar-ul li {
+  cursor: pointer;
+  margin-right: 24px;
+}
+
+.header-bar-search {
+  color: #444;
+  background-color: #f2f2f2;
+  background-image: url('../assets/mag-glass.svg');
+  background-position: 5% center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: 1px solid #b1b2b3;
+  height: 40px;
+  padding: 0 50px;
+  width: 200px;
+}
+
+::placeholder {
+  color: #a1a2a3;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header-bar-menu-hidden {
+    display: none;
+  }
+
+  .header-bar-menu-text {
+    cursor: pointer;
+    display: block;
+  }
+
+  .header-bar-menu {
+    background-color: #e1e2e3;
+    flex-direction: column;
+    padding: 16px;
+    position: static;
+    width: 100%;
+  }
+
+  .header-bar-ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-bar-ul li {
+    margin: 0px 0px 21px -16px;
+    width: 100%;
+  }
+
+  .header-bar-search {
+    background-position: 3% center;
+    width: 100%;
+  }
+}
